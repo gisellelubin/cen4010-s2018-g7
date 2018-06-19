@@ -1,0 +1,127 @@
+Group 7 M1 Document
+
+
+Executive Summary
+-----------------
+The final project our team will be building will be a program to help others report problems they may see on campus. The product name will be CampSnap and it will be primarily targeted at the faculty and students of Florida Atlantic University. It will be an easy to use web application that will make it easier than ever before to report a problem on campus. See a broken sidewalk, water fountain that doesn’t work, or maybe even a lightbulb that’s out and report the problem on the spot on the website. Your report will be go through three phases once it’s submitted with the phases being 
+1. Reported
+2. Underway
+3. Resolved.
+If our staff finds that your report wasn’t a necessary one, or that there are multiple reports about the same issue, we may remove your report to help with the avoidance of duplicate claims and resolve the issue faster. CampSnap will be monitored by FAU staff so you can put your reports right in the eyes of the ones you want to see it the most. Enjoy CampSnap on it’s expected launch in August 2018! 
+
+
+Competitive Analysis
+---------------------
+As of right now we don’t believe there are any direct competitors in our line of work, so we will list our planned features to show what we will bring to the table. 
+
++Core Features
+Any student can report a problem, not reserved for faculty only. 
+A clear visual of where their report is status wise.
+Easy to use interface.
+Picture/video upload.
+Well optimized application.
+
+
+As stated earlier, we don’t believe we have a direct competitor so these are solely what our product will bring to the market. We believe in our product and will work hard to deliver great features even if a competitor does arise. 
+
+
+
+
+
+
+
+
+Data Definition
+---------------
+*User*
+Id
+First Name
+Last Name
+Username
+Password
+Admin (Boolean)
+Created Timestamp
+
+*Report*
+Id
+User Id
+Comments Id
+Location Id
+Status
+Created Timestamp
+
+*Comments*
+Id
+Report Id
+User Id
+Comment
+Comment Timestamp
+
+*Photo*
+Id
+Report Id
+Photo Blob
+
+*Location*
+Id
+Name
+
+
+
+Overview Scenarios
+-------------------
+We believe our users will use our application for its intended purpose, to report issues around campus. There is not much other functionality built into the platform as it serves one purpose. Users could try to abuse it to host photos as their will be photo functionality but if this is detected such images/posts will be deleted by our staff immediately. As the intended market is students and faculty we believe their skill level will be perfectly suitable to use our application and we will try and deliver the best possible user interface and UX design possible to achieve this goal. 
+
+
+
+
+High-Level Functional Requirements
+---------------------------------
+Photo functionality- We want users to be able to upload a photo, preferably showing the exact problem at hand. Our guidelines will state that photos should be clear and try and show as much of the issue as possible as well as list in the description where on campus the issue is located. 
+User Login- To prevent anonymous users reporting problems, we will require you to be logged in to view and report problems on campus. Only @fau.edu email addresses will be accepted. 
+Admin Privileges- Admins (developers and possibly faculty) will be able to remove posts that don’t fit our criteria or that are duplicates that are already being worked on. 
+
+
+
+Non-Functional Requirements
+---------------------------
+We believe the performance will be stellar as there really isn’t a lot of complex data structures involved in an application like this. 
+Expected load for our application is expected to be fairly low as well as it should really only be used when there is an issue on campus. It is not meant to be a daily opener like a social media app for example. 
+Accessibility: Our application will be as accessible as the users availability of internet or cell service access. It should always be up and running and ready to be used. 
+We will monitor the application daily for faults or any other related issues and try and resolve them as quickly as possible. 
+
+
+               
+High-level System Architecture
+------------------------------
+Frameworks
+-Frontend: Bootstrap
+Languages
+-Javascript
+-PHP
+Supported Browsers
+-Chrome
+-Safari
+-Firefox
+
+
+
+Team
+----
+     Name                          Role
+Danny Canter         Frontend Designer
+Giselle Lubin          Backend Designer
+Omar Oropeza         Scrum master
+Timothy Giles           Product Owner
+
+
+Checklist
+---------
+Team decided on means of communciation - COMPLETED
+Team found a time slot to meet outside  of the class - COMPLETED
+Front and Back End Teams Chosen - COMPLETED
+GitHub Master Chosen - COMPLETED
+Team ready and able to use the chosen back and front-end frameworks - COMPLETED
+Skills of each team member defined and known to all - COMPLETED
+Team lead ensured that all team members read the final M1 and agreed before submissions - COMPLETED
+
